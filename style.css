@@ -2,11 +2,15 @@
 *{
     padding: 0; 
     margin: 0;
+    box-sizing: border-box;
 }
 
 /*Selector de tipo: Etiqueta*/
 body{
     background-color: burlywood;
+    font-family: "Roboto", sans-serif;
+    font-weight: 650;
+    font-style: italic;
 }
 
 main{
@@ -14,9 +18,14 @@ main{
     display: flex;
     flex-wrap: wrap;
 }
-
+.roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
 h1{
     color:black;
+    text-align:center ;
 }
 
 /*Selector de tipo: Clase*/
@@ -32,7 +41,9 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 8px; /*Separacion*/
+    margin: 10px; /*Separacion*/
+    padding: 12px;
+    border: 3px solid black;
     transition: all 0.4s ease-in-out;
 }
 
@@ -47,9 +58,12 @@ h1{
 }
 
 .tarjeta img{
+    width: 200  px;
+    height: 250px;
     width: 100%;
     object-fit: cover;
     border-radius: 5%;
+    
 }
 
 .tarjeta p{
